@@ -1,0 +1,51 @@
+html {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px; }
+
+#ff-title-bar {
+  -webkit-app-region: drag;
+  height: 32px;
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #dadbdc;
+  font-family: sans-serif;
+  user-select: none; }
+  #ff-title-bar #title {
+    position: fixed;
+    top: 0px;
+    left: 12px;
+    line-height: 32px;
+    font-size: 14px; }
+  #ff-title-bar #title-bar-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 1px;
+    right: 0px; }
+  #ff-title-bar #title-bar-btns button {
+    height: 32px;
+    width: 32px;
+    color: #999999;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    outline: none; }
+  #ff-title-bar #title-bar-btns button:hover {
+    color: black;
+    background-color: #e5e5e5; }
+    #ff-title-bar #title-bar-btns button:hover#close-btn {
+      color: white;
+      background-color: #fd6257; }
+
+/*# sourceMappingURL=frameless-frame.css.map */

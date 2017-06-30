@@ -1,0 +1,25 @@
+{
+  "name": "electron-frameless-frame",
+  "version": "0.0.1",
+  "description": "Electron Frame for frameless BrowserWindow",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron ./test/main.js",
+    "sass-watch": "sass --watch src/style.scss:lib/frameless-frame.css"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "frameless",
+    "frame"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.11",
+    "sass-lint": "^1.10.2"
+  },
+  "dependencies": {
+    "electron-reload": "^1.2.1"
+  }
+}

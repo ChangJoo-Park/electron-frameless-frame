@@ -1,0 +1,42 @@
+.ff-sierra #ff-title-bar {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  #title-bar-btns {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 90px;
+  }
+
+  #title-bar-btns button {
+    background-color: transparent;
+    border-radius: 50%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+    &#min-btn {
+      content: "";
+      color: transparent;
+      background-color: #fec002;
+    }
+
+    &#max-btn {
+      content: "";
+      color: transparent;
+      background-color: #1acc34;
+    }
+
+    &#close-btn {
+      content: "";
+      color: transparent;
+      background-color: #fd6257;
+    }
+  }
+
+  #title-bar-btns button:hover {
+    background-color: #3F3F41;
+  }
+}

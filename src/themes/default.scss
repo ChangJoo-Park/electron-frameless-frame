@@ -1,0 +1,20 @@
+.ff-default #ff-title-bar {
+  color: black;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #dadbdc;
+  
+  #title-bar-btns button {
+    color: #999999;
+    background-color: transparent;
+  }
+
+  #title-bar-btns button:hover {
+    color: black;
+    background-color: #e5e5e5;
+    &#close-btn {
+      color: white;
+      background-color: #fd6257;
+    }
+  }
+}

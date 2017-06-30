@@ -1,0 +1,37 @@
+.ff-sierra #ff-title-bar {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+}
+.ff-sierra #ff-title-bar #title-bar-btns {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 90px;
+}
+.ff-sierra #ff-title-bar #title-bar-btns button {
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.ff-sierra #ff-title-bar #title-bar-btns button#min-btn {
+  content: "";
+  color: transparent;
+  background-color: #fec002;
+}
+.ff-sierra #ff-title-bar #title-bar-btns button#max-btn {
+  content: "";
+  color: transparent;
+  background-color: #1acc34;
+}
+.ff-sierra #ff-title-bar #title-bar-btns button#close-btn {
+  content: "asdfasdf";
+  color: transparent;
+  background-color: #fd6257;
+}
+.ff-sierra #ff-title-bar #title-bar-btns button:hover {
+  background-color: #3F3F41;
+}

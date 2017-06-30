@@ -1,0 +1,11 @@
+.ff-dark #ff-title-bar {
+  color: #ADADAD;
+  background-color: #2D2D30;
+  border: 1px solid #2D2D30;
+}
+.ff-dark #ff-title-bar #title-bar-btns button {
+  background-color: transparent;
+}
+.ff-dark #ff-title-bar #title-bar-btns button:hover {
+  background-color: #3F3F41;
+}
