@@ -1,6 +1,11 @@
-window.FramelessFrame = function (requestConfig) {
-  const remote = require('electron').remote
-  
+import './style.scss'
+
+window.FramelessFrame = function (remote, requestConfig) {
+  // Validate electron remote
+  if (isInvalidRemote(remote)) {
+    return
+  }
+
   const defaultConfig = {
     theme: 'ff-sierra'
   }
@@ -9,7 +14,7 @@ window.FramelessFrame = function (requestConfig) {
 
   const hasOwnProperty = Object.prototype.hasOwnProperty
 
-  for(var key in defaultConfig) {
+  for (var key in defaultConfig) {
     if (!config.hasOwnProperty(key)) {
       config[key] = defaultConfig[key]
     }
@@ -20,6 +25,15 @@ window.FramelessFrame = function (requestConfig) {
     initializeEvents()
   }
 
+  function isInvalidRemote(remote) {
+    if (typeof remote !== 'object') {
+      return true
+    }
+    if (!remote.hasOwnProperty('getCurrentWindow')) {
+      return true
+    }
+  }
+
   var initializeStyles = function (theme) {
     const themeName = theme || 'ff-default'
     addClassToTitleBar(themeName)
@@ -28,9 +42,9 @@ window.FramelessFrame = function (requestConfig) {
 
   var addClassToTitleBar = function (className) {
     if (document.body.classList) {
-      document.body.classList.add(className);
+      document.body.classList.add(className)
     } else {
-      document.body.className += ' ' + className;
+      document.body.className += ' ' + className
     }
   }
 
@@ -39,9 +53,9 @@ window.FramelessFrame = function (requestConfig) {
     var titleBarElement = document.getElementById('title-bar-btns')
 
     switch (themeName) {
-      case 'ff-sierra': 
+      case 'ff-sierra':
         titleBarElement.prepend(closeButtonElement)
-      break
+        break
     }
   }
 
