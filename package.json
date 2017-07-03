@@ -1,10 +1,11 @@
 {
   "name": "electron-frameless-frame",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Electron Frame for frameless BrowserWindow",
-  "main": "main.js",
+  "main": "./dist/framelessframe.js",
   "scripts": {
     "dev": "electron ./test/main.js",
+    "build": "webpack",
     "sass-watch": "sass --watch src/style.scss:lib/frameless-frame.css"
   },
   "repository": "https://github.com/ChangJoo-Park/electron-frameless-frame",
@@ -16,9 +17,15 @@
   "author": "GitHub",
   "license": "MIT",
   "devDependencies": {
+    "css-loader": "^0.28.4",
     "electron": "~1.6.11",
     "electron-reload": "^1.2.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
     "sass-lint": "^1.10.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.0.0"
   }
 }
