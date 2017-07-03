@@ -7,7 +7,7 @@
     "dev": "electron ./test/main.js",
     "sass-watch": "sass --watch src/style.scss:lib/frameless-frame.css"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/ChangJoo-Park/electron-frameless-frame",
   "keywords": [
     "Electron",
     "frameless",
@@ -17,9 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "~1.6.11",
+    "electron-reload": "^1.2.1",
     "sass-lint": "^1.10.2"
-  },
-  "dependencies": {
-    "electron-reload": "^1.2.1"
   }
 }
